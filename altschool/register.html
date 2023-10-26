@@ -25,12 +25,11 @@
             <form action="mailto:lemixia.jk@gmail.com" method="post">
                 <label>
                     First Name<span>*</span>:
-                    <input type="text" name="first_name" autocomplete="first name" required>
+                    <input type="text" name="first_name" autocomplete="first name" placeholder="Enter your first name here" required>
                 </label>
-                <br><br>
-                <label>
-                    Surname<span>*</span>:
-                    <input type="text" name="surname" autocomplete="surname" required>
+                <label id="lastname">
+                    Last Name<span>*</span>:
+                    <input type="text" name="surname" autocomplete="last name" placeholder="Enter your surname here" required>
                 </label>
                 <br><br>
                 <label>
@@ -52,14 +51,14 @@
                 <br><br>
                 <label>
                     Email Address<span>*</span>:
-                    <input type="email" name="email" value="email" required>
+                    <input type="email" name="email" placeholder="Enter your email here" required>
                 </label>
                 <br><br>
                 <label>
                     Education Level<span>*</span>:
                     <select name="education">
                         <option>Select</option>
-                        <option value="primary">Primary</option>
+                        <option value="primary" required>Primary</option>
                         <option value="secondary">Secondary</option>
                         <option value="graduate">Graduate</option>
                         <option value="post-graduate">Graduate</option>
@@ -68,7 +67,7 @@
                 <br><br>
                 <label>
                     Country<span>*</span>:
-                    <select name="country" required>
+                    <select name="country">
                         <option>Select</option>
                         <option value="south_africa">South Africa</option>
                         <option value="nigera">Nigeria</option>
